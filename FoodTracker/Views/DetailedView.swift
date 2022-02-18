@@ -28,35 +28,47 @@ struct DetailedView: View {
                     Spacer()
                     Text("\(food.nutritionDetails.energy) kcal")
                 }
-                HStack {
-                    Text("Fat:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.fat)) g")
+                if food.nutritionDetails.fat != 0.0 {
+                    HStack {
+                        Text("Fat:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.fat)) g")
+                    }
                 }
-                HStack {
-                    Text("Saturated Fat:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.saturatedFat)) g")
+                if food.nutritionDetails.saturatedFat != 0.0 {
+                    HStack {
+                        Text("Saturated Fat:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.saturatedFat)) g")
+                    }
                 }
-                HStack {
-                    Text("Carbohydrate:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.fat)) g")
+                if food.nutritionDetails.carbohydrate != 0.0 {
+                    HStack {
+                        Text("Carbohydrate:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.carbohydrate)) g")
+                    }
                 }
-                HStack {
-                    Text("Sugar:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.fat)) g")
+                if food.nutritionDetails.sugar != 0.0 {
+                    HStack {
+                        Text("Sugar:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.sugar)) g")
+                    }
                 }
-                HStack {
-                    Text("Protein:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.protein)) g")
+                if food.nutritionDetails.protein != 0.0 {
+                    HStack {
+                        Text("Protein:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.protein)) g")
+                    }
                 }
-                HStack {
-                    Text("Salt:")
-                    Spacer()
-                    Text("\(String(format: "%.1f", food.nutritionDetails.salt)) g")
+                if food.nutritionDetails.salt != 0.0 {
+                    HStack {
+                        Text("Salt:")
+                        Spacer()
+                        Text("\(String(format: "%.1f", food.nutritionDetails.salt)) g")
+                    }
                 }
             }
             .listStyle(.plain)

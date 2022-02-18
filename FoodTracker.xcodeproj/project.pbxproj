@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8609A7F727BE5D97008CAB01 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8609A7F627BE5D97008CAB01 /* TextBox.swift */; };
 		8648ECB127BAC07C001FF1B3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648ECB027BAC07C001FF1B3 /* InputView.swift */; };
 		8648ECB527BBBF9F001FF1B3 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648ECB427BBBF9F001FF1B3 /* FoodData.swift */; };
+		8648ECBA27BBEE7B001FF1B3 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648ECB927BBEE7B001FF1B3 /* ScannerView.swift */; };
+		8648ECBC27BD298F001FF1B3 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648ECBB27BD298F001FF1B3 /* TextModel.swift */; };
+		8648ECBE27BD2B34001FF1B3 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648ECBD27BD2B34001FF1B3 /* TextRecognition.swift */; };
 		86DAB97527B677CD00EA0D2E /* FoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAB97427B677CD00EA0D2E /* FoodTrackerApp.swift */; };
 		86DAB97727B677CD00EA0D2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAB97627B677CD00EA0D2E /* ContentView.swift */; };
 		86DAB97927B677CF00EA0D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DAB97827B677CF00EA0D2E /* Assets.xcassets */; };
@@ -23,8 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8609A7F627BE5D97008CAB01 /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 		8648ECB027BAC07C001FF1B3 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		8648ECB427BBBF9F001FF1B3 /* FoodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
+		8648ECB827BBE9C1001FF1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8648ECB927BBEE7B001FF1B3 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		8648ECBB27BD298F001FF1B3 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		8648ECBD27BD2B34001FF1B3 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
 		86DAB97127B677CD00EA0D2E /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DAB97427B677CD00EA0D2E /* FoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerApp.swift; sourceTree = "<group>"; };
 		86DAB97627B677CD00EA0D2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +78,7 @@
 		86DAB97327B677CD00EA0D2E /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8648ECB827BBE9C1001FF1B3 /* Info.plist */,
 				86DAB98827B7112700EA0D2E /* Model */,
 				86DAB97427B677CD00EA0D2E /* FoodTrackerApp.swift */,
 				86DAB98727B687A000EA0D2E /* Views */,
@@ -95,6 +105,7 @@
 				86DAB98F27B7C87A00EA0D2E /* FoodList.swift */,
 				86DAB99127B806DB00EA0D2E /* DetailedView.swift */,
 				8648ECB027BAC07C001FF1B3 /* InputView.swift */,
+				8648ECB927BBEE7B001FF1B3 /* ScannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +115,8 @@
 			children = (
 				86DAB98B27B7C4B900EA0D2E /* FoodModel.swift */,
 				86DAB99327B81D3B00EA0D2E /* NutritionModel.swift */,
+				8648ECBB27BD298F001FF1B3 /* TextModel.swift */,
+				8609A7F627BE5D97008CAB01 /* TextBox.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 				8648ECB427BBBF9F001FF1B3 /* FoodData.swift */,
 				86DAB97F27B677CF00EA0D2E /* FoodTracker.xcdatamodeld */,
 				86DAB97D27B677CF00EA0D2E /* Persistence.swift */,
+				8648ECBD27BD2B34001FF1B3 /* TextRecognition.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -196,8 +210,12 @@
 				86DAB98C27B7C4B900EA0D2E /* FoodModel.swift in Sources */,
 				86DAB99427B81D3B00EA0D2E /* NutritionModel.swift in Sources */,
 				86DAB99027B7C87A00EA0D2E /* FoodList.swift in Sources */,
+				8648ECBE27BD2B34001FF1B3 /* TextRecognition.swift in Sources */,
 				8648ECB127BAC07C001FF1B3 /* InputView.swift in Sources */,
+				8648ECBA27BBEE7B001FF1B3 /* ScannerView.swift in Sources */,
+				8648ECBC27BD298F001FF1B3 /* TextModel.swift in Sources */,
 				86DAB97727B677CD00EA0D2E /* ContentView.swift in Sources */,
+				8609A7F727BE5D97008CAB01 /* TextBox.swift in Sources */,
 				86DAB97527B677CD00EA0D2E /* FoodTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +350,8 @@
 				DEVELOPMENT_TEAM = RJUQB32699;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodTracker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To scan we need access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,6 +381,8 @@
 				DEVELOPMENT_TEAM = RJUQB32699;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodTracker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To scan we need access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
