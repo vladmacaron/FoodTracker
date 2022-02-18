@@ -67,50 +67,7 @@ struct TextRecognition {
                     textItem.salt = textBoxes[i+1].text.replacingOccurrences(of: "g", with: "").trimmingCharacters(in: .whitespaces)
                 }
             }
-            
-            /*for textBox in textBoxes {
-                if textBox.text.contains("Zucker") {
-                    
-                }
-                it+=1
-            }*/
-            
-            /*observations.forEach { observation in
-                guard let recognizedText = observation.topCandidates(1).first else { return }
-                
-                switch check {
-                case .fat:
-                    textItem.fat = recognizedText.string.replacingOccurrences(of: "g", with: "").trimmingCharacters(in: .whitespaces)
-                    check = .none
-                case .protein:
-                    textItem.protein = recognizedText.string.replacingOccurrences(of: "g", with: "").trimmingCharacters(in: .whitespaces)
-                    check = .none
-                default:
-                    break
-                }
-                
-                switch recognizedText.string {
-                case "Fat":
-                    check = .fat
-                case "Protein":
-                    check = .protein
-                default:
-                    break
-                }
-                
-                textItem.x = observation.boundingBox.origin.x
-                textItem.y = observation.boundingBox.origin.y
-                textItem.text = recognizedText.string
-                
-                /*if recognizedText.string == "Energy" {
-                    check = true
-                }*/
-                //textItem.text += recognizedText.string
-                //textItem.text += "\n"
-                
-                
-            }*/
-            
+
         }
         
         request.recognitionLevel = .accurate
